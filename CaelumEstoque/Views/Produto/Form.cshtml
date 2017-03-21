@@ -1,0 +1,49 @@
+﻿<h2 class="lead text-center">
+    Formulário de Cadastro
+</h2>
+    <form name="formulario" id="formulario" action="/Produto/Adicionar"  method="post">
+        @Html.AntiForgeryToken()
+        <p><label for="codigo">Codigo:</label>
+            <input id="Id" name="produto.Id" value="@ViewBag.Produto.Id" class="form-control" disabled style="width: 150px;" />
+        </p>
+        <input id="Id" type="hidden" name="produto.Id" value="@ViewBag.Produto.Id" class="form-control"  />
+         <p><label for="nome">Nome: </label>
+             <input id="nome" name="produto.Nome" value="@ViewBag.Produto.Nome" class="form-control" style="width: 796px;" />
+            @Html.ValidationMessage("produto.Nome")
+         </p>
+
+        
+         <p><label for="preco" style="position: absolute;margin-top: -5em;margin-left: 58em;">Preço:</label>            
+             <input id="preco" name="produto.Preco" value="@ViewBag.Produto.Preco" class="form-control" style="width: 9em;position: absolute;margin-left: 58em;margin-top: -3.12em;" />
+            @Html.ValidationMessage("produto.Preco")
+            @Html.ValidationMessage("produto.precozero")
+        </p>
+        
+        <p>
+            <label for="quantidade" style="margin-left: 58em;">Quantidade:</label>
+            <input id="quantidade" name="produto.Quantidade" value="@ViewBag.Produto.Quantidade" class="form-control" style="width: 9em;margin-left: 58em;"/>
+            @Html.ValidationMessage("produto.Quantidade")
+            @Html.ValidationMessage("produto.quantidadezero")
+        </p>
+        
+        <p>
+            <label for="descricao" style="position: absolute;margin-top: -5em;margin-left: 0em;">Descrição:</label>
+            <input id="descricao" name="produto.Descricao" value="@ViewBag.Produto.Descricao" class="form-control" style="width: 57em;margin-top: -3em;position: absolute;"/>
+            @Html.ValidationMessage("produto.Descricao")
+
+        </p>
+        <p>
+            <label for="categoria">Categoria: </label>
+
+
+            <select id="categoria" name="produto.CategoriaId" class="form-control" style="width: 154px;">
+                @foreach (var categorias in ViewBag.Categoria)
+                {
+                    <option value="@categorias.Id" selected="@categorias.Id.Equals(ViewBag.Produto.CategoriaId)">@categorias.Nome</option>
+                }
+            </select>
+
+        </p>
+        <p><input type="submit" value="Cadastrar" class="btn btn-primary" /></p>
+    </form>
+

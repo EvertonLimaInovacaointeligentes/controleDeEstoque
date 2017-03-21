@@ -1,0 +1,23 @@
+﻿
+        
+        <h2>Cadastro de Categoria</h2>
+        <form action="/Categoria/Adicionar" method="post">
+            @Html.AntiForgeryToken()
+            <p>
+                <label for="codigo">Codigo:</label>
+                <input type="text" value="@ViewBag.Categorias.Id" disabled class="form-control"/>
+                <input name="categoria.Id" type="hidden" value="@ViewBag.Categorias.Id" />
+            </p>
+            <p>
+                <lable for="Nome">Nome: </lable>
+                <input type="text" name="categoria.Nome" id="Nome" value="@ViewBag.Categorias.Nome" class="form-control"/>
+                @Html.ValidationMessage("categoria.Nome")
+            </p>
+            <p>
+                <label for="Descricao">Descricao: </label>
+                <input type="text" name="categoria.Descricao" value="@ViewBag.Categorias.Descricao" class="form-control" />
+                @Html.ValidationMessage("categoria.Descricao")
+            </p>
+            <p><input type="submit" value="Cadastrar" class="btn btn-primary" /></p>
+        </form>
+

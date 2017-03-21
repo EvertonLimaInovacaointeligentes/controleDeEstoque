@@ -1,0 +1,15 @@
+﻿
+
+<h1> Detalhe Usuario @ViewBag.Usuario.Nome.ToUpper()</h1>
+
+<p style="margin-top:50px;"<label for="Nome"><h2>Código: @ViewBag.Usuario.Id</h2></label>
+<label for="Nome"><h2>Usuário: @ViewBag.Usuario.Nome</h2></label></p>
+
+
+<input type="button" class="btn btn-primary" value="Voltar para Lista de Usuários" onclick="Voltar();"/>
+<script type="text/javascript" src="~/Scripts/Jquery-1.10.2.js"></script>
+<script type="text/javascript">
+    function Voltar() {
+        window.location.assign("/Usuario/Index");
+    }
+</script>

@@ -1,0 +1,14 @@
+﻿
+<p>Código: @ViewBag.Categorias.Id</p>
+<p>Nome: @ViewBag.Categorias.Nome</p>
+<p>Descrição: @ViewBag.Categorias.Descricao</p>
+
+
+<!--<p>Html.ActionLink("Voltar para pagina","Index")</p>-->
+<p><input type="button" id="Voltar" value="Voltar para Lista de Categorias" onclick="Voltar();" class="btn btn-primary" /></p>
+<script type="text/javascript" src="~/Scripts/Jquery-1.10.2.js"></script>
+<script type="text/javascript">
+    function Voltar() {
+        window.location.assign("/Categoria");
+    }
+</script>

@@ -1,0 +1,59 @@
+﻿@model IList<CaelumEstoque.Models.Produto>
+
+    <h1 class="lead text-center">Lista de Produtos</h1>
+    
+    <input id="Cadastro" type="button" value="Cadastar Produto" class="btn btn-primary" style="width:10em; margin-left: 51em;position: absolute;margin-top: -8em;" onclick="paginaCadastro();"/>
+    <table border="1" class="table table-hover">
+        <thead>
+              <tr>
+                  <th>Código</th>
+                  <th>Nome</th>
+                  <th>Descriçao</th>
+                  <th>Quantidade</th>
+                  <th>Preço</th>
+                  <th>Categoria</th>                  
+                  <th colspan="3" align="center">Propriedade</th>
+                  <th>Dim</th>
+              </th>
+        </thead>
+        <tbody>
+            @foreach (var produto in Model)
+            { 
+                <tr>
+                    <td>@produto.Id</td> 
+                    <td>@produto.Nome</td>
+                    <td>@produto.Descricao</td>
+                    <td id="quantidade@(produto.Id)">@produto.Quantidade</td>
+                    <td width="100px">@Convert.ToDouble(produto.Preco).ToString("C")</td>
+                    <td>@produto.Categoria.Nome</td>
+                    <!--Para esse parametro abaixo está comentado foi necessario remover o arroba, vou utlizar um metodo que funciona parecido com Action
+                        Link-->
+                    <!--<td>Html.ActionLink("Visualizar", "Visualiza", new { id=produto.Id})</td>-->
+                    <td>@Html.RouteLink("Visualizar","VisualizarProdutos",new {id=produto.Id})</td>
+                    <!--<td>Html.ActionLink("Editar", "Editar", new { id=produto.Id})</td>-->
+                    <td><a href="/Produto/Editar/@produto.Id">Editar</a></td>
+                    <td><a href="/Produto/Remover/@produto.Id">Remover</a></td>
+                    <td width="30px"><a href="#" onclick="decrementa(@produto.Id);">(-)</a></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <script type="text/javascript" src="~/Scripts/Jquery-1.10.2.js"></script>
+    <script type="text/javascript">
+        function decrementa(produtoId)
+        {
+            var url = "@Url.Action("Decrementa", "Produto")";
+            var params = {id : produtoId};
+            $.post(url, params, atualiza);
+
+        }
+        function atualiza(resposta)
+        {
+            var elemento = $("#quantidade" + resposta.Id);
+            elemento.html(resposta.Quantidade);
+        }
+        function paginaCadastro()
+        {
+            window.location.assign("/Produto/Form");
+        }
+    </script>

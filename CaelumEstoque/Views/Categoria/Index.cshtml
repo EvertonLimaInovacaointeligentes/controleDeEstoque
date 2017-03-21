@@ -1,0 +1,43 @@
+﻿
+    
+    
+        <h2 class="lead text-center">Lista de Categorias</h2>    
+        <input type="button" onclick="PaginaCadasto();" value="Cadastrar Categoria" class="btn btn-primary" style="position: absolute;margin-top: -8em;margin-left: 53em;" />
+            <table border="1" class="table table-hover">
+    <thead>
+        <tr>
+            <th>Código</th>
+            <th>Nome</th>
+            <th>Descrição</th>
+            <th colspan="3">Propriedades</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var categorias in ViewBag.Categorias)
+        {
+            <tr>
+                <td>@categorias.Id</td>
+                <td>@categorias.Nome</td>
+                <td>@categorias.Descricao</td>
+                <td>@Html.ActionLink("Visualizar", "Visualizar", new {id=@categorias.Id })</td>
+                <td>@Html.ActionLink("Editar", "Editar", new {id=@categorias.Id })</td>
+                <td>@Html.ActionLink("Remover", "Remover", new { id=@categorias.Id})</td>
+            </tr>
+        }
+    </tbody>
+</table>
+<script type="text/javascript" src="~/Scripts/Jquery-1.10.2.js"></script>
+<script type="text/javascript">
+    function PaginaCadasto()
+    {
+        window.location.assign("/Categoria/Editar/0");
+    }
+</script>
+
+
+
+
+
+        
+    
+

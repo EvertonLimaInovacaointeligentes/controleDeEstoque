@@ -1,0 +1,47 @@
+﻿
+<!DOCTYPE html>
+
+<html>
+<head>
+    
+    <meta name="viewport" content="width=device-width ,initial-scale=1" />
+    <title>Sistema Controle de Estoque</title>
+    <link rel="stylesheet" href="~/Content/css/bootstrap.css" />
+    <link rel="stylesheet" href="~/Content/css/Site.css" />
+    
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <ul class="nav nav-pills pull-right">
+                <li>@Html.ActionLink("Inicio","Index","Home")</li>
+                <li>@Html.ActionLink("Produtos", "Index", "Produto")</li>
+                <li>@Html.ActionLink("Categorias", "Index", "Categoria")</li>
+                <li>@Html.ActionLink("Usuario","Index","Usuario")</li>
+                <li>@Html.ActionLink("Logout","Sair","Login")</li>      
+            </ul>
+            
+            <img src="~/Content/img/logo.png" />
+            <h3 class="text-muted" style="margin-left: 68px;margin-top: -36px;">
+                Controle Estoque
+            </h3>
+            @using CaelumEstoque.Models;
+            @{
+                var usuario = Session["usuarioLogado"] as Usuario;
+                if(usuario==null)
+                {
+                    usuario = new Usuario();
+                }
+                else
+                {
+                    <label for="usuario" style="margin-left: 374px;" class="h3">Bem Vindo,@usuario.Nome</label>
+                }
+            }
+            
+        </div>
+        <div id="conteudo">
+            @RenderBody()
+        </div>
+    </div>
+</body>
+</html>

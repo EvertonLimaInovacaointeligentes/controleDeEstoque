@@ -1,0 +1,16 @@
+﻿
+    <p>Código: @ViewBag.Produto.Id</p>
+    <p>Nome: @ViewBag.Produto.Nome</p>
+    <p>Descrição: @ViewBag.Produto.Descricao</p>
+    <p>Preço: @Convert.ToDouble(ViewBag.Produto.Preco).ToString("C")</p>
+    <p>Quantidade: @ViewBag.Produto.Quantidade</p>
+    <p>Categoria: @ViewBag.Produto.Categoria.Nome</p>
+    
+    <!--<p>Html.ActionLink("Voltar para pagina","Index")</p>-->
+    <p><input type="button" id="Voltar" value="Voltar para Lista de Produtos" onclick="Voltar();" class="btn btn-primary" /></p>
+<script type="text/javascript" src="~/Scripts/Jquery-1.10.2.js"></script>
+<script type="text/javascript">
+    function Voltar() {
+        window.location.assign("/produtos");
+    }
+</script>

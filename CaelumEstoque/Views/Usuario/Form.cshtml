@@ -1,0 +1,27 @@
+﻿<h2 class="lead text-center">
+    Formulário de Cadastro Usuário
+</h2>
+<form name="formulario" id="formulario" action="/Usuario/Adicionar" method="post">
+    @Html.AntiForgeryToken()
+    <p>
+        <label for="codigo">Codigo:</label>
+        <input id="Id" name="usuario.Id" value="@ViewBag.Usuario.Id" class="form-control" disabled style="width: 150px;" />
+    </p>
+    <input id="Id" type="hidden" name="usuario.Id" value="@ViewBag.Usuario.Id" class="form-control" />
+    <p>
+        <label for="usuario">Usuario: </label>
+        <input id="usuario" name="usuario.Nome" value="@ViewBag.Usuario.Nome"  class="form-control" style="width: 796px;" />
+        @Html.ValidationMessage("usuario.Nome")
+    </p>
+
+
+    <p>
+        <label for="senha" style="position: absolute;margin-top: -5em;margin-left: 58em;">Senha:</label>
+        <input id="senha" name="usuario.Senha" value="@ViewBag.Usuario.Senha" type="password" class="form-control" style="width: 9em;position: absolute;margin-left: 58em;margin-top: -3.12em;" />
+        @Html.ValidationMessage("usuario.Senha")
+        
+    </p>
+    
+    <p><input id="cadastro" type="submit" value="Cadastrar" class="btn btn-primary" /></p>
+</form>
+

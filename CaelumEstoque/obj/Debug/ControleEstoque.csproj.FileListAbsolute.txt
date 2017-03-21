@@ -1,0 +1,46 @@
+C:\Users\OS\Documents\Visual Studio 2013\Projects\backup alura projeto\ControleEstoque\CaelumEstoque\bin\CaelumEstoque.dll.config
+C:\Users\OS\Documents\Visual Studio 2013\Projects\backup alura projeto\ControleEstoque\CaelumEstoque\bin\CaelumEstoque.dll
+C:\Users\OS\Documents\Visual Studio 2013\Projects\backup alura projeto\ControleEstoque\CaelumEstoque\bin\CaelumEstoque.pdb
+C:\Users\OS\Documents\Visual Studio 2013\Projects\backup alura projeto\ControleEstoque\CaelumEstoque\bin\EntityFramework.dll
+C:\Users\OS\Documents\Visual Studio 2013\Projects\backup alura projeto\ControleEstoque\CaelumEstoque\bin\EntityFramework.SqlServer.dll
+C:\Users\OS\Documents\Visual Studio 2013\Projects\backup alura projeto\ControleEstoque\CaelumEstoque\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\OS\Documents\Visual Studio 2013\Projects\backup alura projeto\ControleEstoque\CaelumEstoque\bin\System.Web.Helpers.dll
+C:\Users\OS\Documents\Visual Studio 2013\Projects\backup alura projeto\ControleEstoque\CaelumEstoque\bin\System.Web.Mvc.dll
+C:\Users\OS\Documents\Visual Studio 2013\Projects\backup alura projeto\ControleEstoque\CaelumEstoque\bin\System.Web.Razor.dll
+C:\Users\OS\Documents\Visual Studio 2013\Projects\backup alura projeto\ControleEstoque\CaelumEstoque\bin\System.Web.WebPages.Deployment.dll
+C:\Users\OS\Documents\Visual Studio 2013\Projects\backup alura projeto\ControleEstoque\CaelumEstoque\bin\System.Web.WebPages.dll
+C:\Users\OS\Documents\Visual Studio 2013\Projects\backup alura projeto\ControleEstoque\CaelumEstoque\bin\System.Web.WebPages.Razor.dll
+C:\Users\OS\Documents\Visual Studio 2013\Projects\backup alura projeto\ControleEstoque\CaelumEstoque\bin\EntityFramework.xml
+C:\Users\OS\Documents\Visual Studio 2013\Projects\backup alura projeto\ControleEstoque\CaelumEstoque\bin\EntityFramework.SqlServer.xml
+C:\Users\OS\Documents\Visual Studio 2013\Projects\backup alura projeto\ControleEstoque\CaelumEstoque\bin\System.Web.Helpers.xml
+C:\Users\OS\Documents\Visual Studio 2013\Projects\backup alura projeto\ControleEstoque\CaelumEstoque\bin\System.Web.Mvc.xml
+C:\Users\OS\Documents\Visual Studio 2013\Projects\backup alura projeto\ControleEstoque\CaelumEstoque\bin\System.Web.Razor.xml
+C:\Users\OS\Documents\Visual Studio 2013\Projects\backup alura projeto\ControleEstoque\CaelumEstoque\bin\System.Web.WebPages.xml
+C:\Users\OS\Documents\Visual Studio 2013\Projects\backup alura projeto\ControleEstoque\CaelumEstoque\bin\System.Web.WebPages.Deployment.xml
+C:\Users\OS\Documents\Visual Studio 2013\Projects\backup alura projeto\ControleEstoque\CaelumEstoque\bin\System.Web.WebPages.Razor.xml
+C:\Users\OS\Documents\Visual Studio 2013\Projects\backup alura projeto\ControleEstoque\CaelumEstoque\obj\Debug\ControleEstoque.csprojResolveAssemblyReference.cache
+C:\Users\OS\Documents\Visual Studio 2013\Projects\backup alura projeto\ControleEstoque\CaelumEstoque\obj\Debug\CaelumEstoque.dll
+C:\Users\OS\Documents\Visual Studio 2013\Projects\backup alura projeto\ControleEstoque\CaelumEstoque\obj\Debug\CaelumEstoque.pdb
+C:\projetos\ControleEstoque\CaelumEstoque\bin\CaelumEstoque.dll.config
+C:\projetos\ControleEstoque\CaelumEstoque\bin\CaelumEstoque.dll
+C:\projetos\ControleEstoque\CaelumEstoque\bin\CaelumEstoque.pdb
+C:\projetos\ControleEstoque\CaelumEstoque\bin\EntityFramework.dll
+C:\projetos\ControleEstoque\CaelumEstoque\bin\EntityFramework.SqlServer.dll
+C:\projetos\ControleEstoque\CaelumEstoque\bin\Microsoft.Web.Infrastructure.dll
+C:\projetos\ControleEstoque\CaelumEstoque\bin\System.Web.Helpers.dll
+C:\projetos\ControleEstoque\CaelumEstoque\bin\System.Web.Mvc.dll
+C:\projetos\ControleEstoque\CaelumEstoque\bin\System.Web.Razor.dll
+C:\projetos\ControleEstoque\CaelumEstoque\bin\System.Web.WebPages.Deployment.dll
+C:\projetos\ControleEstoque\CaelumEstoque\bin\System.Web.WebPages.dll
+C:\projetos\ControleEstoque\CaelumEstoque\bin\System.Web.WebPages.Razor.dll
+C:\projetos\ControleEstoque\CaelumEstoque\bin\EntityFramework.xml
+C:\projetos\ControleEstoque\CaelumEstoque\bin\EntityFramework.SqlServer.xml
+C:\projetos\ControleEstoque\CaelumEstoque\bin\System.Web.Helpers.xml
+C:\projetos\ControleEstoque\CaelumEstoque\bin\System.Web.Mvc.xml
+C:\projetos\ControleEstoque\CaelumEstoque\bin\System.Web.Razor.xml
+C:\projetos\ControleEstoque\CaelumEstoque\bin\System.Web.WebPages.xml
+C:\projetos\ControleEstoque\CaelumEstoque\bin\System.Web.WebPages.Deployment.xml
+C:\projetos\ControleEstoque\CaelumEstoque\bin\System.Web.WebPages.Razor.xml
+C:\projetos\ControleEstoque\CaelumEstoque\obj\Debug\ControleEstoque.csprojResolveAssemblyReference.cache
+C:\projetos\ControleEstoque\CaelumEstoque\obj\Debug\CaelumEstoque.dll
+C:\projetos\ControleEstoque\CaelumEstoque\obj\Debug\CaelumEstoque.pdb
